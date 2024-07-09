@@ -199,7 +199,9 @@ export default function CheckWeather() {
                 </div>
                 <div className="text-sm mb-2 font-awesome-icon">
                   {getWeatherIcon(item.weather[0].description)}
+                  <p> {item.weather[0].description}</p>
                 </div>
+
                 <div className="flex justify-between">
                   <div className="text-sm">Humidity:</div>
                   <div className="font-semibold">{item.main.humidity}%</div>
